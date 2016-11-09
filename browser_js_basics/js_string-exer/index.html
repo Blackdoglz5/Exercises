@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>WORD!</title>
+		<link rel="stylesheet" type="text/css" src="main.js">
+	</head>
+	<body>
+   <p id="word">
+	 <script type="text/javascript">
+	var prompt = prompt("Enter any word you like!");
+	if (prompt != null) {
+
+		alert("You entered: "+ prompt+"\n"+
+		 "There are "+ prompt.length+ " characters in it.\n"+
+		 "Lowercase: "+ prompt.toLowerCase()+"\n"+
+		 "Uppercase: "+ prompt.toUpperCase()+"\n"+
+		 "Example: The "+ prompt+ " fell out of the tree"+"\n"+
+		 "Subword: "+ prompt.substring(1,4)
+		 );
+	}
+		document.getElementById("word").innerHTML = prompt;
+	 </script>
+	</p>
+   </body>
+</html>
